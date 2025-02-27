@@ -61,7 +61,7 @@ const DataTable = <TData, TValue>({
         {table.getRowModel().rows.map((row) => (
           <tr
             key={row.id}
-            className="bg-[#160f13] hover:bg-[#1d1d23] text-[#847164]"
+            className="bg-[#160f13] hover:bg-[#1d1d23] text-beige"
           >
             {row.getVisibleCells().map((cell) => {
               return (

@@ -48,19 +48,19 @@ const CryptoOverwiewPage = () => {
             <button
               disabled={isLoading}
               onClick={() => fetchNextPage()}
-              className="bg-[#121219] hover:bg-[#1d1d23] py-4 border border-[#323238] rounded-[15px] text-[#877467] font-bold"
+              className="bg-[#121219] hover:bg-[#1d1d23] py-4 border border-[#323238] rounded-[15px] text-beige font-bold"
             >
               Load more data
             </button>
           ) : (
             <div className="flex justify-center mt-10 w-full">
-              <Loader2 className=" animate-spin" size={48} />
+              <Loader2 className="animate-spin" size={48} />
             </div>
           )}
         </div>
       ) : (
         <div className="flex justify-center mt-10 w-full">
-          <Loader2 className=" animate-spin" size={48} />
+          <Loader2 className="animate-spin" size={48} />
         </div>
       )}
     </div>

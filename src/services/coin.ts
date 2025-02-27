@@ -1,3 +1,6 @@
+// This file defines an API slice using RTK Query to fetch cryptocurrency market data from CoinGecko.
+// It includes an infinite query (`getMarketCoins`) for paginated fetching of market coins.
+
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { Coin } from "../types/types";
 

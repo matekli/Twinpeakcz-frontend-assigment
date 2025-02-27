@@ -10,6 +10,7 @@ interface CoinCardProps {
 }
 const CoinCard = ({ coin }: CoinCardProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
   return (
     <div className="w-auto bg-gradient-to-b from-[#17171c] to-[#111118] mb-4 py-2 rounded-3xl border border-[#323238]">
       <div className="py-4">
@@ -34,22 +35,22 @@ const CoinCard = ({ coin }: CoinCardProps) => {
         <div className="border-t border-[#323238] px-0 grid grid-cols-[auto,1fr] py-4 gap-y-4">
           <div className="pl-4">
             <p className="text-[#4d4d53] pb-2">ID</p>
-            <p className="text-[#847164]">{coin.id}</p>
+            <p className="text-beige">{coin.id}</p>
           </div>
           <div className="pl-4">
             <p className="text-[#4d4d53] pb-2">Symbol</p>
             <div className="flex items-center">
               <img src={coin.image} className="mr-2 w-4 h-4" />
-              <p className="text-[#847164]">{coin.symbol}</p>
+              <p className="text-beige">{coin.symbol}</p>
             </div>
           </div>
           <div className="pl-4">
             <p className="text-[#4d4d53] pb-2">Market cap</p>
-            <p className="text-[#847164]">{coin.market_cap}</p>
+            <p className="text-beige">{coin.market_cap}</p>
           </div>
           <div className="pl-4">
             <p className="text-[#4d4d53] pb-2">Price change in 24h</p>
-            <p className="text-[#847164]">
+            <p className="text-beige">
               <ChangeIndicator change={coin.price_change_percentage_24h} />
             </p>
           </div>
